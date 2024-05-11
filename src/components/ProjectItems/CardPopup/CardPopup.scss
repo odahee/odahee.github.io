@@ -1,0 +1,12 @@
+.popup-close-button{
+    position: absolute;
+    background-color: var(--background-dark);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover{
+        cursor: pointer;
+    }
+}

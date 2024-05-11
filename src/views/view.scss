@@ -1,0 +1,48 @@
+
+.quote{
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+ .project-content {
+     padding-top: calc(56px + 30vh);
+     margin: auto;
+ }
+
+ .project-menu-buttons{
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: var(--text-primary) !important;
+    justify-content: end !important;
+    width: auto;
+    font-weight: 400 !important;
+    padding: 0 0 2px !important;
+
+    &:hover{ cursor: pointer;}
+ }
+
+ .underline {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 10px;
+     background-color: var(--text-primary);
+     border-radius: 100px;
+ }
+
+ .typewriter_cursor_loading{font-size: 4rem; font-weight: 300}
+
+ .loader-writer{ span {
+        font-size: 4rem;
+        margin-left: 12px;
+        font-weight: 500;
+    }}
+
+ @media only screen and (max-width: 768px) {
+    .typewriter_cursor_loading {font-size: 3rem}
+    .loader-writer {
+        span {font-size: 3.2rem; margin-left: 0;}
+    }
+ }
