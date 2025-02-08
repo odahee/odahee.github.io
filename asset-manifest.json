@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.b42e8cbc.css",
-    "main.js": "/static/js/main.f3687829.js",
+    "main.css": "/static/css/main.27c86b4c.css",
+    "main.js": "/static/js/main.66c07e4d.js",
     "static/js/453.b5b15961.chunk.js": "/static/js/453.b5b15961.chunk.js",
-    "static/media/monkon.png": "/static/media/monkon.80deecd27160130238db.png",
-    "static/media/genser.png": "/static/media/genser.987eac36d12e5aa6c052.png",
+    "static/media/sweater4.jpg": "/static/media/sweater4.569e708d1cd5d71d8b1f.jpg",
+    "static/media/sweater2.jpg": "/static/media/sweater2.a538228f5a32971bd5e2.jpg",
+    "static/media/sweater.jpg": "/static/media/sweater.50302c6247826cf540ed.jpg",
+    "static/media/sweater3.jpg": "/static/media/sweater3.c0d34e9f54bc3c3b0320.jpg",
     "static/media/logo_notext.png": "/static/media/logo_notext.ad551278ca5f66d4f5d2.png",
     "static/media/logo.png": "/static/media/logo.f7aa082d718cf54d531e.png",
     "static/media/404.png": "/static/media/404.425fd1ea16710502a0e7.png",
     "index.html": "/index.html",
-    "main.b42e8cbc.css.map": "/static/css/main.b42e8cbc.css.map",
-    "main.f3687829.js.map": "/static/js/main.f3687829.js.map",
+    "main.27c86b4c.css.map": "/static/css/main.27c86b4c.css.map",
+    "main.66c07e4d.js.map": "/static/js/main.66c07e4d.js.map",
     "453.b5b15961.chunk.js.map": "/static/js/453.b5b15961.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b42e8cbc.css",
-    "static/js/main.f3687829.js"
+    "static/css/main.27c86b4c.css",
+    "static/js/main.66c07e4d.js"
   ]
 }
