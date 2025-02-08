@@ -1,8 +1,10 @@
 import MainLayout from "../layouts/MainLayout/MainLayout";
-import monkon from '../assets/monkon.png'
 import './view.scss'
 import { Box } from "@mui/material";
-import { useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaAsterisk } from "react-icons/fa6";
+import AboutMe from "../components/AboutMe/AboutMe";
+
 
 const HomeView = () => {
 
@@ -10,8 +12,8 @@ const HomeView = () => {
   return (
     <MainLayout>
       <Box mt={12} sx={{height:'200vh'}}>
-        
-      </Box>
+      <AboutMe/>
+     </Box>
     </MainLayout>
   );
 }

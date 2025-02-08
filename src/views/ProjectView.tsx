@@ -18,7 +18,7 @@ import { motion } from "framer-motion";
 const ProjectView = () => {
 
     const test1 : ProjectItem= {
-        title: "Anders & Monkon",
+        title: "Gønsør Strøkkø",
         description: "En guling og en ape som koser seg i solen. Genseren er laget av ull og monkine er laget av nydelig mykt tøystoff som varmer enhver guling på vinteren.",
         thumbnail: genser1,
         size: "M",
@@ -36,7 +36,7 @@ const ProjectView = () => {
     }
 
     const test3 : ProjectItem= {
-        title: "Anders & Monkon",
+        title: "Bear Genser",
         description: "En guling og en ape som koser seg i solen. Genseren er laget av ull og monkine er laget av nydelig mykt tøystoff som varmer enhver guling på vinteren.",
         thumbnail: genser4,
         size: "M",
