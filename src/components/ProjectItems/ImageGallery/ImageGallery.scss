@@ -1,0 +1,20 @@
+.image-gallery-button{
+    z-index: 2;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px;
+    background-color: var(--background-dark);
+    transition: all 0.3s ease-in-out;
+    border: none;
+
+    &:hover:not(:disabled){
+        cursor: pointer;
+        background-color: var(--background-light);
+        transition: all 0.3s ease-in-out;
+    }
+}

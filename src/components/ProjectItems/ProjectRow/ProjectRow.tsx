@@ -3,7 +3,7 @@ import { motion, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './ProjectRow.scss';
 import { ProjectItem } from '../ProjectTypes';
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Grid, Link, Typography } from '@mui/material';
 import Card from '../Card/Card';
 import CardPopup from '../CardPopup/CardPopup';
 
@@ -43,18 +43,14 @@ const ProjectRow: React.FC<CardProps> = ({ items, category }) => {
         >
           {category}
         </Typography>
-      <Grid container spacing={{xs: 8, md:5}}>
+      <Grid container spacing={{xs: 8, sm: 4, md:5}}>
         {items.map((item: ProjectItem, index: number) => (
-          <>
             <Grid item xs={12} sm={6} md={4} key={index}>
-              <Box onClick={() => handleCurrentProject(item)}>
-              <Card cardInfo={item} onClick={showModal} />
-              </Box>
+              <Card cardInfo={item} onClick={() => {handleCurrentProject(item); showModal();}} />
             </Grid>
-          </>
         ))}
       </Grid>
-      <CardPopup popupContent={currentProject} isOpen={isOpen} close={closeModal} category={category}></CardPopup>
+      <CardPopup popupContent={currentProject} isOpen={isOpen} close={closeModal} category={category} images={currentProject.images ?? [currentProject.thumbnail]}/>
     </Box>
   );
 };

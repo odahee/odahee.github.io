@@ -6,8 +6,11 @@ import './view.scss'
 import ProjectLayout from "../layouts/ProjectLayout/ProjectLayout";
 import ProjectRow from "../components/ProjectItems/ProjectRow/ProjectRow";
 
-import genser from "../assets/genser.png"
-import monkon from '../assets/monkon.png'
+import genser1 from "../assets/sweaters/sweater.jpg"
+import genser2 from "../assets/sweaters/sweater2.jpg"
+import genser3 from "../assets/sweaters/sweater3.jpg"
+import genser4 from "../assets/sweaters/sweater4.jpg"
+
 import { motion } from "framer-motion";
 
 
@@ -17,36 +20,47 @@ const ProjectView = () => {
     const test1 : ProjectItem= {
         title: "Anders & Monkon",
         description: "En guling og en ape som koser seg i solen. Genseren er laget av ull og monkine er laget av nydelig mykt tøystoff som varmer enhver guling på vinteren.",
-        thumbnail: monkon,
+        thumbnail: genser1,
         size: "M",
         yarn_type: "Rauma - Fivel",
+        images: [genser1, genser2]
     }
 
     const test2 : ProjectItem = {
         title: "Genser",
         description: "En nydelig fargerik med spennende passform. Denne genseren passer perfekt på en småkjølig høstkveld eller en frisk vårmorgen! Den er strikket i restgarn og er et perfekt prosjekt for deg som ønsker å gjøre noe med restgarnet ditt",
-        thumbnail: genser,
+        thumbnail: genser3,
         size: "S",
         yarn_type: "Rauma - Fivel",
+        images: [genser3]
+    }
+
+    const test3 : ProjectItem= {
+        title: "Anders & Monkon",
+        description: "En guling og en ape som koser seg i solen. Genseren er laget av ull og monkine er laget av nydelig mykt tøystoff som varmer enhver guling på vinteren.",
+        thumbnail: genser4,
+        size: "M",
+        yarn_type: "Rauma - Fivel",
+        images: [genser4]
     }
 
     const testRow1: ProjectItemRow = {
-        items: [test1, test1, test1],
+        items: [test1, test2, test3],
         title: "Sweaters"
     }
 
     const testRow2: ProjectItemRow = {
-        items: [test1, test2, test1],
+        items: [test1, test2, test3],
         title: "Tops"
     }
 
     const testRow3: ProjectItemRow = {
-        items: [test2, test1, test2],
+        items: [test1, test2, test3],
         title: "Cardigans"
     }
 
     const testRow4: ProjectItemRow = {
-        items: [test1, test2, test1],
+        items: [test1, test2, test3],
         title: "Accessories"
     }
 
@@ -69,7 +83,7 @@ const ProjectView = () => {
     return (
             <ProjectLayout>
                 <Fade in timeout={1000}>
-                <Grid container pt={{xs: 0, md: 10}}>
+                <Grid container pt={{xs: 0, md: 10}} p={{xs: '10%', sm:'10%', md:'0%'}}>
                     <Grid item xs={12} md={6} sx={{display:'flex', alignItems: 'center'}}>
                         <Typography variant='h1' sx={{fontSize: {xs:'3rem', md:'4rem'}, fontWeight: '500', color: 'var(--text-primary)'}}>My Projects.</Typography>
                     </Grid>

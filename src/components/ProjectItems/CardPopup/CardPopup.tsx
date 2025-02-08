@@ -12,6 +12,7 @@ import {
 } from '@mui/material';
 import { motion } from 'framer-motion';
 import { IoIosClose } from "react-icons/io";
+import { ImageGallery } from '../ImageGallery/ImageGallery';
 
 
 interface CardPopupProps {
@@ -19,8 +20,9 @@ interface CardPopupProps {
     category: string;
     isOpen: boolean;
     close: () => void;
+    images: string[]
 }
-const CardPopup : React.FC<CardPopupProps> = ({ popupContent, isOpen, close, category }) => {
+const CardPopup : React.FC<CardPopupProps> = ({ popupContent, isOpen, close, category, images }) => {
 
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
@@ -66,12 +68,9 @@ const CardPopup : React.FC<CardPopupProps> = ({ popupContent, isOpen, close, cat
               <Grid container display={'flex'} sx={{height: '100%'}}>
                   <Grid item md={6} xs={12} sx={{
                       height:'100%',
-                      width:'100%',
-                      background: `url(${popupContent.thumbnail})`,
-                      backgroundSize: 'cover',
-                      backgroundRepeat:'no-repeat',
-                      backgroundColor:'var(--background-tertiary)',}}
+                      width:'100%'}}
                   >
+                    <ImageGallery images={images}/>
                   </Grid>
                   <Grid item md={6} xs={12} sx={{backgroundColor:'var(--background-secondary)', borderRadius: 8}}>
                       <Box py={6} px={{xs:4, md:6}}>

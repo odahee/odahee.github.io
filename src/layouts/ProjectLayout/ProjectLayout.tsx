@@ -1,4 +1,4 @@
-import { Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Box, Container, Typography, useMediaQuery, useTheme } from '@mui/material';
 import './ProjectLayout.scss'
 import { useLayoutEffect } from 'react';
 
@@ -12,9 +12,9 @@ const ProjectLayout = ({children} : {children: any}) => {
   }, []);
 
   return (
-    <div className="project-layout-container" style={{paddingTop: isMobile ? 'calc(4rem + 56px)' : 'calc(4rem + 56px + 56p)'}}>
+    <Box px={{xs: '10%', sm:'5%', md: '10%'}} className="project-layout-container" style={{paddingTop: isMobile ? 'calc(4rem + 56px)' : 'calc(4rem + 56px + 56px)'}}>
       {children}
-    </div>
+    </Box>
   );
 }
 
